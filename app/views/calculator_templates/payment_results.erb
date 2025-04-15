@@ -1,0 +1,10 @@
+<h1>Payment Results</h1>
+<p>APR<br>
+<%=@apr.to_fs(:percentage, {:precision => 4})%><br>
+Number of years<br>
+<%=@period%><br>
+Principal<br>
+<%=@principal.to_fs(:currency)%><br>
+Payment<br>
+<%=@result.to_fs(:currency)%></p>
+<a href="/payment/new">Calculate another payment</a>
